@@ -1,7 +1,6 @@
 package com.example.saurabhpandey.notifyme;
 
 import android.app.Activity;
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
@@ -41,7 +40,7 @@ public class MainActivity extends Activity {
 
 
         notification.setSound(Settings.System.DEFAULT_NOTIFICATION_URI);
-        notification.setLights(Color.GREEN, 3000, 3000);
+        notification.setLights(Color.BLUE, 3000, 3000);
         notification.setVibrate(new long[]{1000, 1000, 1000, 1000, 1000});
 
 
