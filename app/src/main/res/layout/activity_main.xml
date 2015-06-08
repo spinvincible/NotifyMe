@@ -9,31 +9,30 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearTextLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
-        android:id="@+id/linearTextLayout">
+        android:orientation="vertical">
 
 
         <TextView
+            android:id="@+id/textViewWord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewWord"
-            android:text="Word"
             android:padding="20dp"
-            android:textStyle="bold"
+            android:text="Word"
             android:textSize="25sp"
+            android:textStyle="bold"
             />
 
-
         <TextView
+            android:id="@+id/textViewMeaning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
-            android:id="@+id/textViewMeaning"
-            android:textSize="15sp"
-            android:text="Meaning"/>
+            android:text="Meaning"
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -46,5 +45,6 @@
         android:layout_centerVertical="true"
         android:onClick="notifyMe"
         android:text="Notify Me" />
+
 
 </RelativeLayout>

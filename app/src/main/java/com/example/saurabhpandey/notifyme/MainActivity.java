@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
     private static final int uniqueID = 123654;
     NotificationCompat.Builder notification;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,4 +55,41 @@ public class MainActivity extends Activity {
         notificationManager.notify(uniqueID, notification.build());
 
     }
+// Add ShortCut to Home Screen
+//    private void ShortcutIcon(){
+//
+//        Intent shortcutIntent = new Intent(getApplicationContext(), SplashScreen.class);
+//        shortcutIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//        shortcutIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//
+//        Intent addIntent = new Intent();
+//        addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+//        addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "NotifyMe");
+//        addIntent.putExtra("duplicate", false);
+//        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.ic_launcher));
+//        addIntent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+//        getApplicationContext().sendBroadcast(addIntent);
+//    }
+
+    // Creates shortcut on Android widget screen
+//    private void addShortcut() {
+//        //Adding shortcut for MainActivity
+//        //on Home screen
+//        Intent shortcutIntent = new Intent(getApplicationContext(),
+//                MainActivity.class);
+//
+//        shortcutIntent.setAction(Intent.ACTION_MAIN);
+//
+//        Intent addIntent = new Intent();
+//        addIntent
+//                .putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
+//        addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "HelloWorldShortcut");
+//        addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
+//                Intent.ShortcutIconResource.fromContext(getApplicationContext(),
+//                        R.drawable.ic_launcher));
+//
+//        addIntent
+//                .setAction("com.android.launcher.action.INSTALL_SHORTCUT");
+//        getApplicationContext().sendBroadcast(addIntent);
+//    }
 }
