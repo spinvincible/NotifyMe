@@ -41,7 +41,6 @@ public class MainActivity extends Activity {
 
     }
 
-    // Defining the Method for getting on click
     public void notifyMe(View view) {
 
 //Build The Notification
