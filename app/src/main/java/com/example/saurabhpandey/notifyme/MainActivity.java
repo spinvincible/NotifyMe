@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
         notificationManager.notify(uniqueID, notification.build());
 
     }
-// Add ShortCut to Home Screen
+// Add shortcut to home screen
 //    private void ShortcutIcon(){
 //
 //        Intent shortcutIntent = new Intent(getApplicationContext(), SplashScreen.class);
